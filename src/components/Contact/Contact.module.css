@@ -1,0 +1,76 @@
+.section {
+  padding: 100px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.sectionId {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text-muted);
+  letter-spacing: 1px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.2vw, 48px);
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+.sub {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 16px 32px;
+  transition: background var(--motion-fast), color var(--motion-fast);
+}
+
+.ctaPrimary:hover {
+  background: var(--color-accent);
+  color: var(--color-bg-deep);
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  transition: color var(--motion-fast);
+}
+
+.link:hover {
+  color: var(--color-text);
+}
