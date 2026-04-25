@@ -122,3 +122,20 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+@media (max-width: 640px) {
+  .inner {
+    padding: 56px 24px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ctaPrimary {
+    width: 100%;
+    text-align: center;
+  }
+}

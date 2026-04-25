@@ -1,29 +1,51 @@
 import styles from './Projects.module.css'
+import { useLang } from '../../context/LanguageContext'
 
-const projects = [
-  {
-    id: '01',
-    name: 'APOCALIPSE',
-    tags: ['Unity', 'C#', 'WebGL'],
-    description: 'Jogo de sobrevivência top-down com sistemas de combate e ondas de inimigos.',
-    image: 'public/apocalipse.png',
-    link: 'https://davy04.itch.io/apocalipse',
-  },
-]
+const projects = {
+  pt: [
+    {
+      id: '01',
+      name: 'APOCALIPSE',
+      tags: ['Unity', 'C#', 'WebGL'],
+      description: 'Jogo de sobrevivência top-down com sistemas de combate e ondas de inimigos.',
+      image: 'public/apocalipse.png',
+      link: 'https://davy04.itch.io/apocalipse',
+    },
+  ],
+  en: [
+    {
+      id: '01',
+      name: 'APOCALIPSE',
+      tags: ['Unity', 'C#', 'WebGL'],
+      description: 'Top-down survival game with combat systems and enemy waves.',
+      image: 'public/apocalipse.png',
+      link: 'https://davy04.itch.io/apocalipse',
+    },
+  ],
+}
+
+const labels = {
+  pt: { title: 'PROJETOS', viewProject: '→ VER PROJETO' },
+  en: { title: 'PROJECTS', viewProject: '→ VIEW PROJECT' },
+}
 
 export default function Projects() {
+  const { lang } = useLang()
+  const list = projects[lang]
+  const l = labels[lang]
+
   return (
     <section id="projects" className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.sectionHeader}>
           <span className={styles.sectionId}>// 02</span>
-          <h2 className={styles.sectionTitle}>PROJETOS</h2>
+          <h2 className={styles.sectionTitle}>{l.title}</h2>
         </div>
 
         <div className={styles.grid}>
-          {projects.map(project => (
+          {list.map(project => (
             <article key={project.id} className={styles.card}>
-              <a href={project.link} className={styles.imageWrap}>
+              <a href={project.link} className={styles.imageWrap} target="_blank" rel="noreferrer">
                 {project.image ? (
                   <img src={project.image} alt={project.name} className={styles.image} />
                 ) : (
@@ -35,7 +57,7 @@ export default function Projects() {
                   </div>
                 )}
                 <div className={styles.imageOverlay}>
-                  <span className={styles.overlayLink}>→ VER PROJETO</span>
+                  <span className={styles.overlayLink}>{l.viewProject}</span>
                 </div>
               </a>
 

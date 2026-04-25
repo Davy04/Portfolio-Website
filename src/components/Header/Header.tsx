@@ -1,34 +1,40 @@
 import { useState } from 'react'
 import styles from './Header.module.css'
+import { useLang } from '../../context/LanguageContext'
 
-const navLinks = [
-  { label: 'SOBRE', href: '#about' },
-  { label: 'PROJETOS', href: '#projects' },
-  { label: 'CONTATO', href: '#contact' },
-]
+const navHrefs = ['#about', '#projects', '#contact']
+const navLabels = {
+  pt: ['SOBRE', 'PROJETOS', 'CONTATO'],
+  en: ['ABOUT', 'PROJECTS', 'CONTACT'],
+}
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { lang, toggle } = useLang()
 
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <a href="#" className={styles.logo}>DAKA-LABS <span className={styles.build}>[BUILD]</span></a>
+        <a href="#" className={styles.logo}>
+          DAKA-LABS <span className={styles.build}>[BUILD]</span>
+        </a>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
-          {navLinks.map(link => (
+          {navLabels[lang].map((label, i) => (
             <a
-              key={link.label}
-              href={link.href}
+              key={label}
+              href={navHrefs[i]}
               className={styles.navLink}
               onClick={() => setMenuOpen(false)}
             >
-              {link.label}
+              {label}
             </a>
           ))}
         </nav>
 
-        <a href="#contact" className={styles.cta}>[CONTATO]</a>
+        <button onClick={toggle} className={styles.langToggle} aria-label="Trocar idioma">
+          {lang === 'pt' ? 'EN' : 'PT'}
+        </button>
 
         <button
           className={styles.hamburger}
