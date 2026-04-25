@@ -3,35 +3,11 @@ import styles from './Projects.module.css'
 const projects = [
   {
     id: '01',
-    name: 'ECOMMERCE DASHBOARD',
-    tags: ['React', 'TypeScript', 'REST API'],
-    description: 'Painel administrativo para gestão de pedidos e estoque com filtros dinâmicos.',
-    image: '',
-    link: '#',
-  },
-  {
-    id: '02',
-    name: 'FINANCE TRACKER',
-    tags: ['Next.js', 'Prisma', 'PostgreSQL'],
-    description: 'App de controle financeiro com categorização automática e relatórios mensais.',
-    image: '',
-    link: '#',
-  },
-  {
-    id: '03',
-    name: 'DESIGN SYSTEM',
-    tags: ['React', 'Storybook', 'CSS Modules'],
-    description: 'Biblioteca de componentes para produto SaaS com tokens de design e documentação.',
-    image: '',
-    link: '#',
-  },
-  {
-    id: '04',
-    name: 'CLI TASK MANAGER',
-    tags: ['Node.js', 'TypeScript', 'SQLite'],
-    description: 'Gerenciador de tarefas via linha de comando com projetos, tags e suporte a editor.',
-    image: '',
-    link: '#',
+    name: 'APOCALIPSE',
+    tags: ['Unity', 'C#', 'WebGL'],
+    description: 'Jogo de sobrevivência top-down com sistemas de combate e ondas de inimigos.',
+    image: 'public/apocalipse.png',
+    link: 'https://davy04.itch.io/apocalipse',
   },
 ]
 

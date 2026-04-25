@@ -7,20 +7,21 @@ export default function Hero() {
         <div className={styles.label}>// INIT_SEQUENCE</div>
 
         <h1 className={styles.title}>
-          CRIO<br />
+          CONSTRUO<br />
           <span className={styles.accent}>EXPERIÊNCIAS</span><br />
-          DIGITAIS QUE<br />
-          <span className={styles.accent}>FUNCIONAM</span>
+          INTERATIVAS<br />
+          <span className={styles.accent}>COM UNITY</span>
         </h1>
 
         <p className={styles.subtitle}>
-          Desenvolvedor front-end focado em interfaces rápidas,<br />
-          acessíveis e com atenção aos detalhes.
+          Desenvolvedor Unity com foco em gameplay, UI e WebGL.<br />
+          Construo sistemas interativos prontos para produção,<br />
+          com atenção à performance e experiência real de uso.
         </p>
 
         <div className={styles.actions}>
           <a href="#projects" className={styles.ctaPrimary}>&gt; VER PROJETOS</a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className={styles.ctaSecondary}>
+          <a href="https://github.com/Davy04" target="_blank" rel="noreferrer" className={styles.ctaSecondary}>
             GITHUB →
           </a>
         </div>

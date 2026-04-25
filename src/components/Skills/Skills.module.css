@@ -57,50 +57,27 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-/* ── Skill items ── */
-.itemList {
+/* ── Tag list ── */
+.tagList {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.item {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.itemTop {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.itemName {
+.tag {
   font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--color-text);
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-}
-
-.itemLevel {
-  font-family: var(--font-mono);
-  font-size: 11px;
   color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  padding: 6px 14px;
+  transition: border-color var(--motion-fast), color var(--motion-fast);
 }
 
-/* ── Progress bar ── */
-.bar {
-  height: 3px;
-  background: var(--color-border);
-  width: 100%;
-}
-
-.barFill {
-  height: 100%;
-  background: var(--color-accent);
-  transition: width 0.6s ease;
+.tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-text);
 }
 
 @media (max-width: 860px) {

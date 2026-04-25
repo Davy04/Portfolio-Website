@@ -17,11 +17,11 @@ export default function Contact() {
           <a href="mailto:davywoolley@gmail.com" className={styles.ctaPrimary}>
             &gt; ENVIAR E-MAIL
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className={styles.link}>
-            GITHUB →
+          <a href="https://github.com/Davy04" target="_blank" rel="noreferrer" className={styles.ctaPrimary}>
+            &gt; GITHUB
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className={styles.link}>
-            LINKEDIN →
+          <a href="https://linkedin.com/in/davywoolley/" target="_blank" rel="noreferrer" className={styles.ctaPrimary}>
+            &gt; LINKEDIN
           </a>
         </div>
       </div>

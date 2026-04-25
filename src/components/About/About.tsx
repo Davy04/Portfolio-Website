@@ -2,16 +2,16 @@ import styles from './About.module.css'
 
 const skills = [
   {
-    category: 'FRONTEND',
-    items: ['React', 'TypeScript', 'Next.js', 'CSS Modules', 'Tailwind', 'Vite'],
+    category: 'UNITY / UI',
+    items: ['Unity UI (uGUI)', 'TextMeshPro', 'DOTween', 'Responsive UI', 'WebGL'],
   },
   {
-    category: 'BACKEND',
-    items: ['Node.js', 'Express', 'Prisma', 'PostgreSQL', 'REST API', 'GraphQL'],
+    category: 'BACKEND / C#',
+    items: ['C#', '.NET / ASP.NET Core', 'REST APIs', 'WebSocket', 'JSON / Serialization'],
   },
   {
     category: 'FERRAMENTAS',
-    items: ['Git', 'Docker', 'Figma', 'Storybook', 'Vitest', 'GitHub Actions'],
+    items: ['Unity', 'Git / GitHub', 'Rider'],
   },
 ]
 
@@ -26,21 +26,21 @@ export default function About() {
         </div>
 
         <p className={styles.bio}>
-          Hi! I'm <span className={styles.highlight}>Davy Woolley</span>, a{' '}
-          <span className={styles.highlight}>Software Engineer</span> and{' '}
-          <span className={styles.highlight}>Content Creator</span>.{' '}
-          I build fast, accessible web interfaces with a strong focus on user experience
-          and clean code. My work sits at the intersection of front-end engineering and
-          product design — I care about the details that make interfaces feel right.
-          Outside of coding, I create content around development, tools, and the craft
-          of building things for the web.
+          Sou <span className={styles.highlight}>Davy Woolley</span>, desenvolvedor de jogos especializado em{' '}
+          <span className={styles.highlight}>Unity</span> e{' '}
+          <span className={styles.highlight}>C#</span>.{' '}
+          Tenho experiência criando sistemas de gameplay, interfaces e integrações com backend,
+          com foco em performance e entrega final. Trabalho principalmente com projetos voltados
+          para <span className={styles.highlight}>WebGL</span> e aplicações interativas que precisam
+          rodar bem fora do ambiente ideal. Busco sempre desenvolver soluções estáveis,
+          escaláveis e prontas para produção.
         </p>
 
         <div className={styles.bottom}>
           <div className={styles.infoCard}>
             <div className={styles.infoRow}>
               <span className={styles.infoKey}>LOCALIZAÇÃO</span>
-              <span className={styles.infoVal}>Brasil</span>
+              <span className={styles.infoVal}>Recife, Brasil</span>
             </div>
             <div className={styles.infoRow}>
               <span className={styles.infoKey}>EXPERIÊNCIA</span>
@@ -48,13 +48,13 @@ export default function About() {
             </div>
             <div className={styles.infoRow}>
               <span className={styles.infoKey}>FOCO</span>
-              <span className={styles.infoVal}>Front-end / UI</span>
+              <span className={styles.infoVal}>Unity, C#, WebGL, iGaming</span>
             </div>
             <div className={styles.infoRow}>
               <span className={styles.infoKey}>STATUS</span>
               <span className={styles.statusVal}>
                 <span className={styles.dot} />
-                Disponível
+                Aberto a propostas
               </span>
             </div>
           </div>

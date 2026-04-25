@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <a href="#" className={styles.logo}>DAVY.DEV <span className={styles.build}>[BUILD]</span></a>
+        <a href="#" className={styles.logo}>DAKA-LABS <span className={styles.build}>[BUILD]</span></a>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
           {navLinks.map(link => (
