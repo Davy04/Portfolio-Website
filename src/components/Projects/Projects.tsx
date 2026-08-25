@@ -5,20 +5,52 @@ const projects = {
   pt: [
     {
       id: '01',
+      name: 'BULLET CRASH',
+      tags: ['Unity', 'C#', 'WebGL'],
+      description: 'Roguelite 2D top-down de sobrevivência: hordas crescentes de inimigos, tiro automático e upgrades escolhidos a cada nível para montar builds diferentes a cada partida.',
+      image: 'bullet-crash.png',
+      link: 'https://davy04.itch.io/bullet-crash',
+    },
+    {
+      id: '02',
+      name: 'SOCCER SHOWDOWN',
+      tags: ['Unity', 'C#', 'WebGL'],
+      description: 'Futebol arcade 1v1 com física exagerada, partidas rápidas e chutes especiais. Duelos diretos em campo reduzido, com controles simples e alto ritmo.',
+      image: 'soccer-showdown.png',
+      link: 'https://davy04.itch.io/soccer-showdown',
+    },
+    {
+      id: '03',
       name: 'APOCALIPSE',
       tags: ['Unity', 'C#', 'WebGL'],
       description: 'Jogo de sobrevivência top-down com sistemas de combate e ondas de inimigos.',
-      image: 'public/apocalipse.png',
+      image: 'apocalipse.png',
       link: 'https://davy04.itch.io/apocalipse',
     },
   ],
   en: [
     {
       id: '01',
+      name: 'BULLET CRASH',
+      tags: ['Unity', 'C#', 'WebGL'],
+      description: '2D top-down survival roguelite: escalating enemy hordes, auto-firing weapons and level-up upgrades that build a different run every time.',
+      image: 'bullet-crash.png',
+      link: 'https://davy04.itch.io/bullet-crash',
+    },
+    {
+      id: '02',
+      name: 'SOCCER SHOWDOWN',
+      tags: ['Unity', 'C#', 'WebGL'],
+      description: 'Arcade 1v1 soccer with exaggerated physics, fast matches and special shots. Head-to-head duels on a small pitch, simple controls and high pace.',
+      image: 'soccer-showdown.png',
+      link: 'https://davy04.itch.io/soccer-showdown',
+    },
+    {
+      id: '03',
       name: 'APOCALIPSE',
       tags: ['Unity', 'C#', 'WebGL'],
       description: 'Top-down survival game with combat systems and enemy waves.',
-      image: 'public/apocalipse.png',
+      image: 'apocalipse.png',
       link: 'https://davy04.itch.io/apocalipse',
     },
   ],
@@ -47,7 +79,7 @@ export default function Projects() {
             <article key={project.id} className={styles.card}>
               <a href={project.link} className={styles.imageWrap} target="_blank" rel="noreferrer">
                 {project.image ? (
-                  <img src={project.image} alt={project.name} className={styles.image} />
+                  <img src={import.meta.env.BASE_URL + project.image} alt={project.name} className={styles.image} />
                 ) : (
                   <div className={styles.imagePlaceholder}>
                     <span className={styles.placeholderId}>{project.id}_</span>
