@@ -50,7 +50,6 @@ function Preview({ kind }: { kind: string }) {
     <div className="preview preview-titles" aria-hidden="true">
       <span className="big-num">10+</span>
       <span className="preview-label">REAL-TIME WEBGL TITLES</span>
-      <span className="stamp">NDA</span>
     </div>
   )
 }
