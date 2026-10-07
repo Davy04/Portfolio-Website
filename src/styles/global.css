@@ -189,7 +189,7 @@ h3 { font-size: 18px; font-weight: 600; }
   position: relative; display: block; aspect-ratio: 16 / 10; overflow: hidden; text-decoration: none;
   background: var(--bg); border-bottom: 1px solid var(--border);
 }
-.media img { width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; transition: transform var(--normal); }
+.media img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--normal); }
 .project:hover .media img { transform: scale(1.05); }
 .media-overlay {
   position: absolute; inset: 0; display: grid; place-items: center;

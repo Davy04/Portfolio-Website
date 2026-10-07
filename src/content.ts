@@ -55,6 +55,15 @@ export const experience = {
 // `image` = file in public/; `preview` = drawn in code when there is no screenshot.
 export const projects = [
   {
+    title: 'AutoFootball',
+    badge: 'LIVE · ALPHA',
+    description:
+      'Football auto-battler card game for the browser: build your squad in the shop, then watch a probabilistic match simulation decide the game. Single-player against archived teams from other players, with 60 player cards and 60 unique abilities. Installable PWA with a Node.js server, a balancing dashboard and Docker deploys through GitHub Actions.',
+    tags: ['TypeScript', 'React', 'Vite', 'Tailwind', 'Node.js', 'Docker'],
+    image: 'autofootball.webp',
+    links: [{ label: 'Play in the browser', href: 'https://autofootball.com.br' }],
+  },
+  {
     title: 'FineLocalization',
     badge: 'OPEN SOURCE',
     description:
@@ -100,11 +109,11 @@ export const projects = [
 
 // `wide` cards take two columns in the skills grid.
 export const skills = [
-  { group: 'Languages', icon: '{ }', wide: true, items: ['C#', 'JavaScript'] },
+  { group: 'Languages', icon: '{ }', wide: true, items: ['C#', 'TypeScript', 'JavaScript', 'SQL'] },
   { group: 'Unity', icon: '▶', wide: true, items: ['Unity', 'DOTween', 'Spine', 'TextMeshPro'] },
   { group: 'Architecture', icon: '◆', items: ['OOP', 'MVC', 'MVVM', 'SOLID'] },
-  { group: 'Networking', icon: '⇄', items: ['REST', 'WebSockets'] },
-  { group: 'Web', icon: '</>', items: ['WebGL', 'React', 'Vite'] },
-  { group: 'DevOps', icon: '$_', items: ['Git', 'GitHub', 'CI/CD'] },
+  { group: 'Backend', icon: '⇄', items: ['Node.js', 'REST', 'WebSockets'] },
+  { group: 'Web', icon: '</>', items: ['React', 'Vite', 'Tailwind', 'WebGL'] },
+  { group: 'DevOps', icon: '$_', items: ['Git', 'GitHub', 'CI/CD', 'Docker'] },
   { group: 'AI tools', icon: '✦', wide: true, items: ['Claude Code', 'ChatGPT', 'Codex'] },
 ]
