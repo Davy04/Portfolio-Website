@@ -56,12 +56,15 @@ export const experience = {
 export const projects = [
   {
     title: 'AutoFootball',
-    badge: 'LIVE · ALPHA',
+    badge: 'ON CRAZYGAMES',
     description:
-      'Football auto-battler card game for the browser: build your squad in the shop, then watch a probabilistic match simulation decide the game. Single-player against archived teams from other players, with 60 player cards and 60 unique abilities. Installable PWA with a Node.js server, a balancing dashboard and Docker deploys through GitHub Actions.',
+      'Anime-style football auto-battler published on CrazyGames (9.6 rating). Build a five-player squad in the shop, pick a formation and watch a play-by-play match simulation, with live subs and tactics. 60 players in 6 rarities, each with a unique ability, and 51 achievements. Opponents are squads other players built at the same stage of their run.',
     tags: ['TypeScript', 'React', 'Vite', 'Tailwind', 'Node.js', 'Docker'],
     image: 'autofootball.webp',
-    links: [{ label: 'Play in the browser', href: 'https://autofootball.com.br' }],
+    links: [
+      { label: 'Play on CrazyGames', href: 'https://www.crazygames.com/br/game/auto-football' },
+      { label: 'autofootball.com.br', href: 'https://autofootball.com.br' },
+    ],
   },
   {
     title: 'FineLocalization',
