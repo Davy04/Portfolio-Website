@@ -56,14 +56,18 @@ export const experience = {
 export const projects = [
   {
     title: 'AutoFootball',
-    badge: 'ON CRAZYGAMES',
+    badge: 'LIVE',
     description:
-      'Anime-style football auto-battler published on CrazyGames (9.6 rating). Build a five-player squad in the shop, pick a formation and watch a play-by-play match simulation, with live subs and tactics. 60 players in 6 rarities, each with a unique ability, and 51 achievements. Opponents are squads other players built at the same stage of their run.',
+      'Football auto-battler card game for the browser, played by 2,000+ players. Build your squad in the shop, then watch a play-by-play match simulation decide the game against squads other players built at the same stage of their run. Installable PWA with a Node.js server, a balancing dashboard and Docker deploys through GitHub Actions.',
     tags: ['TypeScript', 'React', 'Vite', 'Tailwind', 'Node.js', 'Docker'],
     image: 'autofootball.webp',
-    links: [
-      { label: 'Play on CrazyGames', href: 'https://www.crazygames.com/br/game/auto-football' },
-      { label: 'autofootball.com.br', href: 'https://autofootball.com.br' },
+    links: [{ label: 'Play in the browser', href: 'https://autofootball.com.br' }],
+    // Shown in the hero "featured project" panel.
+    stats: [
+      ['2,000+', 'players'],
+      ['2,300+', 'plays'],
+      ['7,900+', 'matches simulated'],
+      ['123K', 'impressions'],
     ],
   },
   {

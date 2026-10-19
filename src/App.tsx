@@ -54,28 +54,35 @@ function Preview({ kind }: { kind: string }) {
   )
 }
 
-// Hero code card — plain spans for syntax colors.
-const K = ({ c }: { c: string }) => <span className="tk-key">{c}</span>
-const T = ({ c }: { c: string }) => <span className="tk-type">{c}</span>
-const S = ({ c }: { c: string }) => <span className="tk-str">"{c}"</span>
+// Hero panel for the project that has live numbers.
+const featured = projects.find(p => p.stats)!
 
-function CodeCard() {
+function FeaturedCard() {
   return (
-    <figure className="code-card">
-      <figcaption className="code-bar"><i /><i /><i /><span>Davy.cs</span></figcaption>
-      <pre><code>
-<K c="public class" /> <T c="Davy" /> : <T c="SoftwareEngineer" />{'\n'}
-{'{\n'}
-{'  '}<K c="string" />   role    = <S c="Software Engineer" />;{'\n'}
-{'  '}<K c="string" />   company = <S c="Opa Games" />;{'\n'}
-{'  '}<K c="string" />[] stack   = {'{ '}<S c="C#" />, <S c="Unity" />, <S c="WebGL" />{' }'};{'\n'}
-{'  '}<K c="string" />   home    = <S c="Olinda, Brazil" />;{'\n'}
-{'  '}<K c="bool" />     remote  = <K c="true" />;{'\n'}
-{'\n'}
-{'  '}<span className="tk-comment">// shipping to 1,000+ players/day</span>{'\n'}
-{'}'}<span className="cursor">█</span>
-      </code></pre>
-    </figure>
+    <article className="window featured" aria-labelledby="featured-title">
+      <div className="window-bar">
+        <i /><i /><i />
+        <span>// FEATURED_PROJECT</span>
+        <span className="live"><span className="dot" aria-hidden="true" /> LIVE</span>
+      </div>
+      <a href={featured.links[0].href} {...ext} className="featured-media" tabIndex={-1} aria-hidden="true">
+        <img src={img(featured.image!)} alt="" />
+      </a>
+      <div className="featured-body">
+        <div className="featured-top">
+          <h2 id="featured-title">{featured.title}</h2>
+          <a className="btn btn-sm" href={featured.links[0].href} {...ext}>Play ↗</a>
+        </div>
+        <dl className="featured-stats">
+          {featured.stats!.map(([value, label]) => (
+            <div key={label}>
+              <dt>{label}</dt>
+              <dd>{value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </article>
   )
 }
 
@@ -127,7 +134,7 @@ export default function App() {
                 OPEN TO REMOTE · {profile.location.toUpperCase()} · GMT-3
               </p>
             </div>
-            <CodeCard />
+            <FeaturedCard />
           </div>
 
           <div className="container">
