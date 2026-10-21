@@ -66,9 +66,18 @@ export const projects = [
     stats: [
       ['2,000+', 'players'],
       ['2,300+', 'plays'],
-      ['7,900+', 'matches simulated'],
+      ['7,900+', 'matches'],
       ['123K', 'impressions'],
     ],
+  },
+  {
+    title: 'Hexagonal API',
+    badge: 'OPEN SOURCE',
+    description:
+      'Customer management REST API built with Hexagonal Architecture (Ports & Adapters): business rules live in a framework-free Java core, while REST, MongoDB, Kafka and an external ZIP-code API plug in through ports. CPF validation runs asynchronously over Kafka, and 33 ArchUnit rules fail the build if the architecture is broken.',
+    tags: ['Java', 'Spring Boot', 'Kafka', 'MongoDB', 'ArchUnit', 'Docker'],
+    image: 'hexagonal.png',
+    links: [{ label: 'GitHub', href: 'https://github.com/Davy04/hexagonal' }],
   },
   {
     title: 'FineLocalization',
