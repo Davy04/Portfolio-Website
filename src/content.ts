@@ -106,6 +106,15 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: 'Sports Tower',
+    badge: 'Playable',
+    description:
+      'Idle tycoon game for the browser: run a sports store tower where every floor is a different sport. Level up floors, open shelves, collect fan cards in an album with rare and holographic epics, complete missions and earn money while away. Prestige through franchises, English and Portuguese, progress saved in the browser.',
+    tags: ['TypeScript', 'Vite', 'SVG'],
+    image: 'sports-tower.png',
+    links: [{ label: 'Play on itch.io', href: 'https://davy04.itch.io/sports-tower' }],
+  },
+  {
     title: 'Hexagonal API',
     badge: 'Open source',
     description:
